@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-xsm{font-size: 14px;}
+
+*{margin: 0;padding: 0;font-family: 'Poppins', sans-serif;box-sizing: border-box;}
+
+.layoutHeight{
+    height: calc(100vh - 89px);
+}
+
+.shadow-custom{
+  box-shadow: 0px 4px 8px rgb(0 0 0 / 3%);
+}
+
+/* CSS */
+/* Customize the scrollbar track */
+::-webkit-scrollbar {
+    width: 4px; /* Width of the scrollbar */
+    height: 6px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Background color of the track */
+  }
+  
+  /* Customize the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #88888899; /* Color of the thumb */
+    border-radius: 4px; /* Rounded corners of the thumb */
+  }
+  
+  /* On hover, style the scrollbar thumb */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color of the thumb on hover */
+  }
+  
+
+@media screen and (max-width:767px)  {
+  .sidebar-collapse .aside{
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: cubic-bezier(0.8, 0, 1, 1) 0.5 ;
+    width: 50.33%;
+    height: 100vh; 
+    z-index: 99999;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width:767px)  {
+  .sidebar-collapse .sidebar-overlay{
+    visibility: visible;
+    opacity: 1;
+  }
+}
