@@ -43,10 +43,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    animation: cubic-bezier(0.8, 0, 1, 1) 0.5 ;
+    animation: cubic-bezier(0.8, 0, 1, 1) 0.9 ;
     width: 50%;
+    opacity: 1;
     height: 100vh; 
-    z-index: 99999;
+    z-index: 9999999;
     transform: translateX(0);
   }
 }
@@ -56,4 +57,13 @@
     visibility: visible;
     opacity: 1;
   }
+}
+
+
+.boxicons-left::before{
+  font-family: 'boxicons';
+}
+
+.boxicons-right::after{
+  font-family: 'boxicons';
 }

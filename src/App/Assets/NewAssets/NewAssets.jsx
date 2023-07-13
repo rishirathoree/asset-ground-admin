@@ -27,6 +27,8 @@ const NewAssets = () => {
 
         </div>
     </div>
+
+    {/* table */}
     <div className="relative overflow-x-auto ring-1 ring-black/5 bg-white lg:w-w-full md:w-full sm:w-full h-min">
           <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
             <thead className="text-xs text-gray-700 uppercase  dark:bg-gray-700 dark:text-gray-400">
@@ -55,6 +57,17 @@ const NewAssets = () => {
               })}
             </tbody>
           </table>
+        </div>
+
+        {/* pagination button */}
+        <div className='flex items-center justify-end'>
+            <span className='bg-[#0E4B72] pl-6 text-white capitalize px-4 py-2 ring-1 ring-black/5 relative before:absolute before:left-1 before:top-2 before:content-["\ed38"] boxicons-left '>prev</span>
+            <span className='bg-white px-4 py-2 ring-1 ring-black/5 hover:bg-slate-100 duration-500 transition-all ease-in-out cursor-pointer'>1</span>
+            <span className='bg-white px-4 py-2 ring-1 ring-black/5 hover:bg-slate-100 duration-500 transition-all ease-in-out cursor-pointer'>2</span>
+            <span className='bg-white px-4 py-2 ring-1 ring-black/5 hover:bg-slate-100 duration-500 transition-all ease-in-out cursor-pointer'>3</span>
+            <span className='bg-white px-4 py-2 ring-1 ring-black/5 hover:bg-slate-100 duration-500 transition-all ease-in-out cursor-pointer'>4</span>
+            <span className='bg-white px-4 py-2 ring-1 ring-black/5 hover:bg-slate-100 duration-500 transition-all ease-in-out cursor-pointer'>...</span>
+            <span className='bg-[#0E4B72] text-white capitalize px-4 py-2 ring-1 pr-6 ring-black/5 relative after:absolute after:right-1 after:top-2 after:content-["\ed38"] boxicons-right after:scale-[-1]'>Next</span>
         </div>
     </div>
     
