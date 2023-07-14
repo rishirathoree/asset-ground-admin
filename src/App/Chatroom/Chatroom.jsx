@@ -25,7 +25,7 @@ const Chatroom = () => {
                  <span className='w-full flex items-center justify-between'>
                     <span className='flex items-center gap-2'>
                     <div className='w-12 h-12 rounded-full bg-gray-300 overflow-hidden '><img src={pfp} className='w-full h-full object-cover' alt="" /></div>
-                    <p className='font-medium text-[12px]'>Rishi Rathore</p>
+                    <p className='font-medium text-[12px] first-letter:capitalize'>angela white</p>
                     </span>
                     <span className='font-medium text-black text-xsm'>01:00</span>
                  </span>
@@ -43,7 +43,7 @@ const Chatroom = () => {
                 <div className='flex items-center gap-2'>
                     <div className='w-12 h-12 rounded-full bg-slate-50 overflow-hidden '><img src={pfp} className='w-full h-full object-cover' alt="" /></div>
                     <div className=''>
-                        <p className='font-medium text-sm'>Rishi Rathore</p>
+                        <p className='font-medium text-sm first-letter:capitalize'>angela white</p>
                         <p className='font-light text-green-500 text-[10px]'>Online</p>
                     </div>
                 </div>
@@ -65,6 +65,15 @@ const Chatroom = () => {
                     )
                 })}
                 </div>
+
+                {/* input */}
+                <div className='w-full sticky gap-2 bottom-0 right-0 bg-white flex border-t border-black/5 items-center p-3'>
+                
+                <span className=''><i className='bx bx-plus p-2  rounded-full ring-1 ring-black/5'></i></span>
+                <input type="text" className='w-full font-medium bg-gray-100 p-3 text-sm text-gray-400 focus:outline-none outline-none rounded-full ' placeholder='Enter Message' />
+                <span className=''><i className='bx bx-link p-2 rounded-full ring-1 ring-black/5'></i></span>
+            </div>
+
         </div>
     </div>
     </>

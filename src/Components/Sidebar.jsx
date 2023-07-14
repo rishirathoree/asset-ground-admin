@@ -22,7 +22,7 @@ const Sidebar = () => {
       { label: "Chat Room", link: "Chatroom" }
     ],
     [
-      { label: "Info Center" },
+      { label: "Info Center",link:'Infocenter' },
       { label: "Interested Center" },
       { label: "Cancellation Center" },
     ],

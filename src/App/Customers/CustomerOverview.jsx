@@ -6,7 +6,7 @@ const CustomerOverview = () => {
       <div className="space-y-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-8">
-            <button className="py-2 px-6 text-xsm text-white bg-[rgba(213,64,74,0.7)]">
+            <button onClick={()=>{history.back()}} className="py-2 px-6 text-xsm text-white bg-[rgba(213,64,74,0.7)]">
               Back
             </button>
             <span className="text-sm text-gray-500 font-medium">
@@ -38,8 +38,11 @@ const CustomerOverview = () => {
           </div>
         </div>
 
+        <p className="font-light text-sm text-right">Created Date & Time: 20/7/2023 - 12:45PM</p>
+
+
         <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4">
-          <div className="grid grid-cols-1 p-8 bg-white shadow-custom rounded-lg gap-4">
+          <div className="grid grid-cols-1 lg:order-1 md:order-1 sm:order-2 p-8 bg-white shadow-custom rounded-lg gap-4">
             <label htmlFor="name" className="w-full flex-col flex gap-2">
               <span className="text-sm font-medium text-gray-500">
                 First Name
@@ -241,7 +244,7 @@ const CustomerOverview = () => {
                 <input
                 id="location"
                 type="text"
-                placeholder="New Password"
+                placeholder="Comments"
                 className="p-3 focus:ring-[#D5404940] w-full rounded ring-1 ring-black/5 focus:ring-1 duration-500 focus:outline-none outline-none text-[12px] text-gray-400 font-normal"/
               >
                 <i className="bx bx-plus bg-[#D5404940] p-2 rounded-full text-white"></i>
@@ -251,8 +254,7 @@ const CustomerOverview = () => {
           </div>
 
           {/* label edit */}
-          <div className="space-y-6">
-            <p className="font-light text-sm text-right">Created Date & Time: 20/7/2023 - 12:45PM</p>
+          <div className="space-y-6 lg:order-2 md:order-2 sm:order-1">
             <div className="bg-white space-y-3 shadow-custom rounded-lg p-4">
                 <span className="font-medium text-sm">Action</span>
 

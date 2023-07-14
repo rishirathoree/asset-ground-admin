@@ -14,6 +14,8 @@ import ProcessingAsset from './Assets/ProcessingAsset/ProcessingAsset'
 import SoldAsset from './Assets/SoldAsset/SoldAsset'
 import Customers from './Customers/Customers'
 import CustomerOverview from './Customers/CustomerOverview'
+import InfoCenter from './Center/InfoCenter/InfoCenter'
+import InfoCenterServices from './Center/InfoCenter/InfoCenterServices'
 
 const Layout = () => {
     return (
@@ -32,8 +34,10 @@ const Layout = () => {
                 <Route path="/ProcessingAsset" element={<ProcessingAsset />} />
                 <Route path="/SoldAsset" element={<SoldAsset />} />
                 <Route path="/customer" element={<Customers />} />
+                <Route path="/Infocenter" element={<InfoCenter />} />
                 <Route path="/customeroverview" element={<CustomerOverview />} />
                 <Route path="/Chatroom" element={<Chatroom />} />
+                <Route path="/InfoCenterService" element={<InfoCenterServices />} />
             </Routes>
             <Footer />
         </div>

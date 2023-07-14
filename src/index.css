@@ -131,3 +131,52 @@ rdobtn-card label {
 .rdobtn-card label input[type=radio]:checked~span em:before {
     background: #0074FD
 }
+
+
+.slect-allchk label {
+  margin: 0;
+  position: relative;
+  text-align: left;
+  display: block;
+  cursor: pointer
+}
+
+.slect-allchk label input[type=checkbox] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  padding: 0;
+  margin: 0
+}
+
+.slect-allchk label input[type=checkbox]~span {
+  position: relative;
+  margin: 0;
+  height: 16px;
+  width: 16px;
+  border: 2px solid #a5a5a5;
+  display: block;
+  border-radius: 4px
+}
+
+.slect-allchk label input[type=checkbox]~span:before {
+  content: "";
+  position: absolute;
+  inset: 1px 0 0;
+  height: 10px;
+  width: 5px;
+  border-bottom: 3px solid transparent;
+  border-right: 3px solid transparent;
+  transform: rotate(45deg);
+  margin: 0 auto
+}
+
+.slect-allchk label input[type=checkbox]:checked~span {
+  border-color: rgba(213,64,74,0.7)
+}
+
+.slect-allchk label input[type=checkbox]:checked~span:before {
+  border-bottom-color: rgba(213,64,74,0.7);
+  border-right-color: rgba(213,64,74,0.7)
+}
