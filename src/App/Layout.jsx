@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom'
 import Breadcurmps from '../Components/Breadcurmps'
 import NewAssets from './Assets/NewAssets/NewAssets'
 import Footer from '../Components/Footer'
+import Chatroom from './Chatroom/Chatroom'
 
 const Layout = () => {
     return (
@@ -16,6 +17,7 @@ const Layout = () => {
             <Routes>
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/NewAsset" element={<NewAssets />} />
+                <Route path="/Chatroom" element={<Chatroom />} />
             </Routes>
             <Footer />
         </div>
