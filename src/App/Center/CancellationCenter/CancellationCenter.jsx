@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const InfoCenter = () => {
+const CancellationCenter = () => {
     const dummy = Array(10).fill(1)
   return (
     <>
@@ -17,17 +17,14 @@ const InfoCenter = () => {
 
         <div className='flex items-center flex-wrap gap-2'>
 
-        <label htmlFor="filterSource" className=' ring-[#D5404940] bg-none ring-1 bg-white flex items-center gap-2'>
-        <select id='filterSource' type="text" className='text-[12px] p-2 text-gray-400 font-normal focus:outline-none outline-none'><option value="">Filter by Source</option></select>
+        <label htmlFor="filterdate" className=' ring-[#D5404940] bg-none ring-1 bg-white flex items-center gap-2'>
+        <select id='filterdate' type="text" className='text-[12px] p-2 text-gray-400 font-normal focus:outline-none outline-none'><option value="Fiter-by-date">Filter by Date</option></select>
         </label>
 
         <label htmlFor="filtertype" className=' ring-[#D5404940] bg-none ring-1 bg-white flex items-center gap-2'>
         <select id='filtertype' type="text" className='text-[12px] p-2 text-gray-400 font-normal focus:outline-none outline-none'><option value="Fiter-by-type">Filter by Type</option></select>
         </label>
 
-        <label htmlFor="filterdate" className=' ring-[#D5404940] bg-none ring-1 bg-white flex items-center gap-2'>
-        <select id='filterdate' type="text" className='text-[12px] p-2 text-gray-400 font-normal focus:outline-none outline-none'><option value="Fiter-by-date">Filter by Date</option></select>
-        </label>
 
         <label htmlFor="filterStatus" className=' ring-[#D5404940] bg-none ring-1 bg-white flex items-center gap-2'>
         <select id='filterStatus' type="text" className='text-[12px] p-2 text-gray-400 font-normal focus:outline-none outline-none'><option value="Fiter-by-price">Filter by Status</option></select>
@@ -62,8 +59,8 @@ const InfoCenter = () => {
                     <td className="p-4 ring-1 ring-black/5 text-black "><p className='w-max'>{index % 2 ? 'Asset Info' : 'Interested Asset'}</p></td>
                     <td className="p-4 ring-1 ring-black/5 text-black"><p className='w-max'>2027/02/04 - 12:45 PM</p></td>
                     <td className="p-4 ring-1 ring-black/5 text-black"><p className='w-max'>123456</p></td>
-                    <td className="p-4 ring-1 ring-black/5 text-black"><p className='w-max'>{index % 2 ? 'New' : 'Under Review'}</p></td>
-                    <td className="p-4 ring-1 ring-black/5 w-full flex items-center justify-center"> <Link to="/InfoCenterService"><span className='cursor-pointer p-2 rounded bg-gray-400/10 ring-2 ring-black/5'>Go</span></Link></td>
+                    <td className="p-4 ring-1 ring-black/5 text-black"><p className='w-max'>{index % 2 ? 'New' : 'Pending'}</p></td>
+                    <td className="p-4 ring-1 ring-black/5 w-full flex items-center justify-center"> <Link to="/CancellationService"><span className='cursor-pointer p-2 rounded bg-gray-400/10 ring-2 ring-black/5'>Go</span></Link></td>
                   </tr>
                 );
               })}
@@ -87,4 +84,4 @@ const InfoCenter = () => {
   )
 }
 
-export default InfoCenter
+export default CancellationCenter

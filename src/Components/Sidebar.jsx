@@ -13,7 +13,7 @@ const Sidebar = () => {
       { label: "Sold Assets", link: "SoldAsset" },
     ],
     [
-      { label: "Assets Update" }, { label: "Removed Assets" }
+      { label: "Assets Update" }, { label: "Removed Assets",link:'RemovedAsset' }
     ],
     [
       { label: "Customers", link: "Customer" }
@@ -23,11 +23,11 @@ const Sidebar = () => {
     ],
     [
       { label: "Info Center",link:'Infocenter' },
-      { label: "Interested Center" },
-      { label: "Cancellation Center" },
+      { label: "Interested Center",link:'Interestedcenter' },
+      { label: "Cancellation Center",link:'Cancellationcenter' },
     ],
     [
-      { label: "Contact Us" }, { label: "Users & Permissions" }
+      { label: "Contact Us",link:"ContactUs" }, { label: "Users & Permissions" }
     ],
     [
       { label: "Banner Control" }

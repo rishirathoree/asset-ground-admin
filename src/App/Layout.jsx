@@ -16,6 +16,14 @@ import Customers from './Customers/Customers'
 import CustomerOverview from './Customers/CustomerOverview'
 import InfoCenter from './Center/InfoCenter/InfoCenter'
 import InfoCenterServices from './Center/InfoCenter/InfoCenterServices'
+import InterestedCenter from './Center/InterestedCenter/InterestedCenter'
+import InterestedCenterService from './Center/InterestedCenter/InterestedCenterService'
+import CancellationCenter from './Center/CancellationCenter/CancellationCenter'
+import CancellationService from './Center/CancellationCenter/CancellationService'
+import RemovedAsset from './Assets/RemovedAsset/RemovedAsset'
+import RemovedAssetService from './Assets/RemovedAsset/RemovedAssetService'
+import ContactUs from './Contact Us/ContactUs'
+import ContactusService from './Contact Us/ContactusService'
 
 const Layout = () => {
     return (
@@ -35,9 +43,17 @@ const Layout = () => {
                 <Route path="/SoldAsset" element={<SoldAsset />} />
                 <Route path="/customer" element={<Customers />} />
                 <Route path="/Infocenter" element={<InfoCenter />} />
+                <Route path="/InfoCenterService" element={<InfoCenterServices />} />
                 <Route path="/customeroverview" element={<CustomerOverview />} />
                 <Route path="/Chatroom" element={<Chatroom />} />
-                <Route path="/InfoCenterService" element={<InfoCenterServices />} />
+                <Route path="/Interestedcenter" element={<InterestedCenter />} />
+                <Route path="/InterestedCenterService" element={<InterestedCenterService />} />
+                <Route path="/Cancellationcenter" element={<CancellationCenter />} />
+                <Route path="/CancellationService" element={<CancellationService />} />
+                <Route path="/Removedasset" element={<RemovedAsset />} />
+                <Route path="/RemovedAssetService" element={<RemovedAssetService />} />
+                <Route path="/ContactUs" element={<ContactUs />} />
+                <Route path="/ContactusService" element={<ContactusService />} />
             </Routes>
             <Footer />
         </div>
