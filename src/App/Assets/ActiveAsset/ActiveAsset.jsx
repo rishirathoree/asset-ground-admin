@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NewAssets = () => {
+const ActiveAsset = () => {
     const dummy = Array(10).fill(1)
   return (
     <>
@@ -36,7 +36,8 @@ const NewAssets = () => {
               <th className="p-4 text-left ring-1 ring-black/5"><p className="w-full font-medium text-gray-400">ID</p></th>
               <th className="p-4 text-left ring-1 ring-black/5"><p className="w-full font-medium text-gray-400">Type</p></th>
               <th className="p-4 text-left ring-1 ring-black/5"><p className="w-full font-medium text-gray-400">Asking Price</p></th>
-              <th className="p-4 text-left ring-1 ring-black/5"><p className="w-full font-medium text-gray-400">Date & Time Received</p></th>
+              <th className="p-4 text-left ring-1 ring-black/5"><p className="w-full font-medium text-gray-400">Asset Title</p></th>
+              <th className="p-4 text-left ring-1 ring-black/5"><p className="w-full font-medium text-gray-400">Active Days</p></th>
               <th className="p-4 text-center ring-1 ring-black/5"><p className="w-full font-medium text-gray-400">View</p></th>
               </tr>
             </thead>
@@ -50,7 +51,8 @@ const NewAssets = () => {
                     <td className="p-4 ring-1 ring-black/5 text-black">{Math.floor(index * Math.random() * 99)}</td>
                     <td className="p-4 ring-1 ring-black/5 text-black  "><p className='w-max'>{index / 2 ? 'Youtube' : index / 3 ? 'Website Sell': 'Domain'}</p></td>
                     <td className="p-4 ring-1 ring-black/5 text-black"><p className='w-max'>600 USD</p></td>
-                    <td className="p-4 ring-1 ring-black/5 text-black"><p className='w-max'>20/07/2023 - 12:45 PM</p></td>
+                    <td className="p-4 ring-1 ring-black/5 text-black"><p className='w-max'>Ecommerce Website Dedicated For Flowers</p></td>
+                    <td className="p-4 ring-1 ring-black/5 text-black"><p className='w-max'>2 Days</p></td>
                     <td className="p-4 ring-1 ring-black/5 w-full flex items-center justify-center"><span className='cursor-pointer p-2 rounded bg-gray-400/10 ring-2 ring-black/5'>Go</span></td>
                   </tr>
                 );
@@ -75,4 +77,4 @@ const NewAssets = () => {
   )
 }
 
-export default NewAssets
+export default ActiveAsset

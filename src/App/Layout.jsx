@@ -6,6 +6,14 @@ import Breadcurmps from '../Components/Breadcurmps'
 import NewAssets from './Assets/NewAssets/NewAssets'
 import Footer from '../Components/Footer'
 import Chatroom from './Chatroom/Chatroom'
+import ActiveAsset from './Assets/ActiveAsset/ActiveAsset'
+import IncompleteAsset from './Assets/IncompleteAssets/IncompleteAsset'
+import RejectedAsset from './Assets/RejectedAsset/RejectedAsset'
+import InactiveAsset from './Assets/InactiveAsset.jsx/InactiveAsset'
+import ProcessingAsset from './Assets/ProcessingAsset/ProcessingAsset'
+import SoldAsset from './Assets/SoldAsset/SoldAsset'
+import Customers from './Customers/Customers'
+import CustomerOverview from './Customers/CustomerOverview'
 
 const Layout = () => {
     return (
@@ -17,6 +25,14 @@ const Layout = () => {
             <Routes>
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/NewAsset" element={<NewAssets />} />
+                <Route path="/ActiveAsset" element={<ActiveAsset />} />
+                <Route path="/IncompleteAsset" element={<IncompleteAsset />} />
+                <Route path="/RejectedAssets" element={<RejectedAsset />} />
+                <Route path="/InactiveAsset" element={<InactiveAsset />} />
+                <Route path="/ProcessingAsset" element={<ProcessingAsset />} />
+                <Route path="/SoldAsset" element={<SoldAsset />} />
+                <Route path="/customer" element={<Customers />} />
+                <Route path="/customeroverview" element={<CustomerOverview />} />
                 <Route path="/Chatroom" element={<Chatroom />} />
             </Routes>
             <Footer />

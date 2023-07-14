@@ -9,7 +9,7 @@ const Breadcurmps = () => {
       <div className="mb-4 w-full">
         {routeLocation.map((item,index)=>{
             return(
-                <span key={index}><p className="">{item}</p></span>
+                <span key={index}><p className="first-letter:capitalize">{item}</p></span>
             )
         })}
       </div>
