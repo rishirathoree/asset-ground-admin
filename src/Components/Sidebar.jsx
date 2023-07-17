@@ -13,7 +13,7 @@ const Sidebar = () => {
       { label: "Sold Assets", link: "SoldAsset" },
     ],
     [
-      { label: "Assets Update" }, { label: "Removed Assets",link:'RemovedAsset' }
+      { label: "Assets Update",link:'AssetUpdate' }, { label: "Removed Assets",link:'RemovedAsset' }
     ],
     [
       { label: "Customers", link: "Customer" }
@@ -35,7 +35,6 @@ const Sidebar = () => {
   ];
   const location = useLocation();
   const routing = location.pathname.split("/");
-  console.log(routing);
 
   return (
     <>
