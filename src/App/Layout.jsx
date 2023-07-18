@@ -25,6 +25,8 @@ import RemovedAssetService from './Assets/RemovedAsset/RemovedAssetService'
 import ContactUs from './Contact Us/ContactUs'
 import ContactusService from './Contact Us/ContactusService'
 import AssetUpdate from './Assets/AssetUpdate/AssetUpdate'
+import BannerControl from './BannerControl/BannerControl'
+import ShowNewAssetOverview from './Assets/NewAssets/ShowNewAssetOverview'
 
 const Layout = () => {
     return (
@@ -56,6 +58,8 @@ const Layout = () => {
                 <Route path="/ContactUs" element={<ContactUs />} />
                 <Route path="/ContactusService" element={<ContactusService />} />
                 <Route path="/AssetUpdate" element={<AssetUpdate />} />
+                <Route path="/AssetOverview" element={<ShowNewAssetOverview />} />
+                <Route path="/BannerControl" element={<BannerControl />} />
             </Routes>
             <Footer />
         </div>

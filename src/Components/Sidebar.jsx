@@ -30,7 +30,7 @@ const Sidebar = () => {
       { label: "Contact Us",link:"ContactUs" }, { label: "Users & Permissions" }
     ],
     [
-      { label: "Banner Control" }
+      { label: "Banner Control", link:'BannerControl' }
     ],
   ];
   const location = useLocation();

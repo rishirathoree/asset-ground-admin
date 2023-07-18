@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const NewAssets = () => {
     const dummy = Array(10).fill(1)
   return (
@@ -51,7 +51,7 @@ const NewAssets = () => {
                     <td className="p-4 ring-1 ring-black/5 text-black  "><p className='w-max'>{index / 2 ? 'Youtube' : index / 3 ? 'Website Sell': 'Domain'}</p></td>
                     <td className="p-4 ring-1 ring-black/5 text-black"><p className='w-max'>600 USD</p></td>
                     <td className="p-4 ring-1 ring-black/5 text-black"><p className='w-max'>20/07/2023 - 12:45 PM</p></td>
-                    <td className="p-4 ring-1 ring-black/5 w-full flex items-center justify-center"><span className='cursor-pointer p-2 rounded bg-gray-400/10 ring-2 ring-black/5'>Go</span></td>
+                    <td className="p-4 ring-1 ring-black/5 w-full flex items-center justify-center"> <Link to="/AssetOverview"><span className='cursor-pointer p-2 rounded bg-gray-400/10 ring-2 ring-black/5'>Go</span></Link></td>
                   </tr>
                 );
               })}
