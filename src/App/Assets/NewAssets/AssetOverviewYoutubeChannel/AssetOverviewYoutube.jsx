@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import AboutBusinessAssetOverview from "./AboutBusinessAssetOverview";
 import AboutAudienceAssetOverview from "./AboutAudienceAssetOverview";
-import AboutProfitablityAssetOverview from "./AboutprofitablityAssetOverview";
 import PhotosAssetOverview from "./PhotosAssetOverview";
 import ContactAssetOverview from "./ContactAssetOverview";
 import AdminUpdatesAssetOverview from "./AdminUpdatesAssetOverview";
+import AboutProfitablityAssetOverview from "./AboutprofitablityAssetOverview";
 
 const AssetOverviewYoutube = () => {
     const switches = ['About Business','Audience','Profitablity','Photos','Contact Details','Admin Updates']
