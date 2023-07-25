@@ -4,7 +4,7 @@ import AboutAudienceAssetOverview from "./AboutAudienceAssetOverview";
 import PhotosAssetOverview from "./PhotosAssetOverview";
 import ContactAssetOverview from "./ContactAssetOverview";
 import AdminUpdatesAssetOverview from "./AdminUpdatesAssetOverview";
-import AboutProfitablityAssetOverview from "./AboutprofitablityAssetOverview";
+import AssetOverviewProfitablity from "./AssetOverviewProfitablity";
 
 const AssetOverviewYoutube = () => {
     const switches = ['About Business','Audience','Profitablity','Photos','Contact Details','Admin Updates']
@@ -72,7 +72,7 @@ const AssetOverviewYoutube = () => {
 
           {currentActiveSwitch === 'About Business' && <AboutBusinessAssetOverview/>}
           {currentActiveSwitch === 'Audience' && <AboutAudienceAssetOverview/>}
-          {currentActiveSwitch === 'Profitablity' && <AboutProfitablityAssetOverview/>}
+          {currentActiveSwitch === 'Profitablity' && <AssetOverviewProfitablity/>}
           {currentActiveSwitch === 'Photos' && <PhotosAssetOverview/>}
           {currentActiveSwitch === 'Contact Details' && <ContactAssetOverview/>}
           {currentActiveSwitch === 'Admin Updates' && <AdminUpdatesAssetOverview/>}
