@@ -108,7 +108,7 @@ const CustomerOverview = () => {
                 Interested In?
               </span>
 
-              <div className="flex items-center gap-4 mt-2">
+              <div className="flex items-center flex-wrap gap-4 mt-2">
                 <div class="rdobtn-card">
                   <label>
                     <input type="radio" name="Activity" />

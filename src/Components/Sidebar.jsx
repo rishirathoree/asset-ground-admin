@@ -56,7 +56,8 @@ const Sidebar = () => {
                     : "before:bg-white"
                 }`}
               >
-                <Link to={`/${tab.link}`}><p className={`text-[12px] duration-500 font-medium ${routing.some((path)=>tab.link && path === tab.link) ? 'text-black' : 'text-slate-400'}`}>{tab.label}</p></Link>
+                <Link to={`/${tab.link}`}><p className={`text-[12px] duration-500 font-medium ${routing.some((path)=>tab.link && path === tab.link) ? 'text-black' : 'text-slate-400'}`}>{tab.label}</p>
+                </Link>
                 {/* <i className="bx bx-chevron-right"></i> */}
               </li>
             ))}
